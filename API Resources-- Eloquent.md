@@ -18,6 +18,45 @@ https://www.youtube.com/watch?v=__DyyzHgYGg
 #### 1
 https://laravel.com/docs/8.x/eloquent-resources#pagination
 ![optional-description-here](https://lh3.googleusercontent.com/pw/ACtC-3euGsQc8UkCaDp4F3CTz4hQQjs0OvAxdd2ZTKWT_qVzYKI7-AgVTwtznek4H5zGX6CAMrM_1yMLKQ9lfSbMY_b5-74qQAqqvu2A9coGDwQ09EFFxnsKrAtAa6ne4niRMveyv1GVH3f_3iTD33Vt5otD=w1622-h943-no?authuser=0)
+
+##### With Usage
+```php
+ 
+class Post extends JsonResource
+{
+    public function toArray($request)
+    {
+        return [
+            'id' => $this->id,
+            'title' => $this->title,
+            'body' => $this->body
+        ];
+    }
+    
+    public function with($request)
+    {
+        return [
+            'version' => '1.0.0',
+            'api_url' => url('http://lpgvue/api')
+        ];
+    }
+}
+
+```
+
+```json
+{
+  "data": {
+    "id": 5,
+    "title": "Nam velit doloribus cumque qui cumque.",
+    "body": "Voluptates culpa quidem omnis soluta animi eaque. Nihil voluptates voluptas quis cum adipisci tenetur. Eveniet voluptatem quo velit ea occaecati ducimus sed."
+  },
+  "version": "1.0.0",
+  "api_url": "http://lpgvue/api"
+}
+
+```
+
 #### 2
 https://vegibit.com/laravel-api-resource-tutorial/
 #### 3
