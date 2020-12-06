@@ -17,6 +17,9 @@ https://www.youtube.com/watch?v=__DyyzHgYGg
 ### Doc Tutorials
 #### 1
 https://laravel.com/docs/8.x/eloquent-resources#pagination
+
+#### 2
+https://vegibit.com/laravel-api-resource-tutorial/
 ![optional-description-here](https://lh3.googleusercontent.com/pw/ACtC-3euGsQc8UkCaDp4F3CTz4hQQjs0OvAxdd2ZTKWT_qVzYKI7-AgVTwtznek4H5zGX6CAMrM_1yMLKQ9lfSbMY_b5-74qQAqqvu2A9coGDwQ09EFFxnsKrAtAa6ne4niRMveyv1GVH3f_3iTD33Vt5otD=w1622-h943-no?authuser=0)
 
 ##### With Usage
@@ -57,8 +60,6 @@ class Post extends JsonResource
 
 ```
 
-#### 2
-https://vegibit.com/laravel-api-resource-tutorial/
 #### 3
 https://blog.pusher.com/build-rest-api-laravel-api-resources/
 #### 4
