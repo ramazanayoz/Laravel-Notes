@@ -1,5 +1,10 @@
 
-###Video Tutorials
+- [Video Tutorials](#video-tutorials)
+- [Doc Tutorials](#doc-tutorials)
+
+
+
+### Video Tutorials
 #### Orginal Doc
 https://laravel.com/docs/8.x/eloquent-resources#pagination
 
