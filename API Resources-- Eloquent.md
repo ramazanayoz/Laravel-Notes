@@ -62,6 +62,9 @@ class Post extends JsonResource
 
 #### 3
 https://blog.pusher.com/build-rest-api-laravel-api-resources/
+
+![optional-description-here](https://lh3.googleusercontent.com/pw/ACtC-3d-mm2MQ7vFc3ywKKnd65zlNtNP5bPXqfLZmBNmj750jCfLoZTdj4ltoG0ZRv4bSQLw0p_4xKKezvZQ6UKn6zf0bb7IpBUnZWuPqYxQiQ3poxP6Ti3uAt_xmAL_dZtOqUb3Ap3zTcVBbebo8m5t-aQn=w613-h943-no?authuser=0)
+
 #### 4
 https://dev.to/tngeene/how-to-create-an-api-with-laravel-resources-19ee
 #### 5
