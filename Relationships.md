@@ -5,6 +5,8 @@
 - [ManyToMany Ex2](#manytomany-ex2)
 - [ManyToMany Ex3](#manytomany-ex3)
 
+- [Laravel Polymorphic Relationship](#laravel-polymorphic-relationship)
+    - [Laravel Polymorphic Relationship](#one-to-many-example-1)
 
 
 ### OneToOne Ex1
@@ -90,3 +92,19 @@ foreach ($user->roles as $role) {
    echo $role->pivot->nameCol1
 }
 ```
+
+
+
+### Laravel Polymorphic Relationship
+#### One to Many Example 1
+https://www.itsolutionstuff.com/post/laravel-one-to-many-polymorphic-relationship-tutorialexample.html
+Videonun bir çok yorumu olabilir
+Postun bir çok yorumu olabilir
+burada yorumlar tablosu ortak
+Tablo yapısı
+![optional-description-here](https://miro.medium.com/max/875/1*vsWqvRVK8Lci26zfJBnPrg.png)
+![optional-description-here](https://miro.medium.com/max/875/1*aGuF_jhd9jxStoYr98dcVQ.png)
+![optional-description-here](https://miro.medium.com/max/2300/1*o6zZOnQw__CGm-tL1KumEg.png)
+
+
+
