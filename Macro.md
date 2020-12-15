@@ -7,7 +7,7 @@
     ### 2.way Using With Mixin Class
     
     
-    ```php
+```php
      class AppServiceProvider extends ServiceProvider
     {
         /**
