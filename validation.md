@@ -2,7 +2,7 @@
 
 ## Validate 
 
-### 1-way creating validator
+#### 1-way creating validator
 ```php
 $this->validate($request, [
     'title' => 'required|unique:posts|max:255',
@@ -12,7 +12,7 @@ $this->validate($request, [
 
 ```
 
-2-way Manually Creating Validators
+#### 2-way Manually Creating Validators
 ```php
 $validator = Validator::make($request->all(), [
     'title' => 'required|unique:posts|max:255',
