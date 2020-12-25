@@ -9,6 +9,7 @@
 ## GUARDS 
 https://dev.to/niyiojeyinka/learn-to-use-laravel-guard-by-creating-an-ads-network-2ifp
 https://morioh.com/p/6ac297d15e53
+https://www.codecheef.org/article/laravel-multi-authentication-using-guard
 
 ### Creating Custom Auth  
 
@@ -77,6 +78,22 @@ class Advertiser extends Authenticatable
           'driver' => 'eloquent',
           'model' => App\Advertiser::class,
     ],
+],
+
+
+
+'passwords' => [
+      'users' => [
+          'provider' => 'users',
+          'table' => 'password_resets',
+          'expire' => 60,
+      ],
+        
+        //add custom 
+      'advertisers' => [  // And here also
+          'provider' => 'advertisers',
+          'table' => 'password_resets',
+          'expire' => 60,
 ],
     
 ```
