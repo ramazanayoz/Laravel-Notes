@@ -22,7 +22,8 @@ class Advertiser extends Authenticatable
 {
     use Notifiable;
 
-    
+    protected $guard = 'advertiser';
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
