@@ -8,6 +8,7 @@
 
 ## GUARDS 
 https://dev.to/niyiojeyinka/learn-to-use-laravel-guard-by-creating-an-ads-network-2ifp
+https://morioh.com/p/6ac297d15e53
 
 ### Creating Custom Auth  
 
