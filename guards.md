@@ -2,7 +2,9 @@
   - [Creating Custom Auth](#creating-custom-auth)
   - [Creating Custom Guard](#creating-custom-guard)
   - [Creating Middleware For Guard Protect](#creating-middleware-for-guard-protect)
-  - [Guard Usage In Routes](guard-usage-in-routes)
+  - [Guard Usage In Routes](#guard-usage-in-routes)
+  - [Specifying A Guard in Controller](#specifying-a-guard-in-controller)
+  - [Accessing Specific Guard Instances](#accessing-specific-guard-instances)
 
 ## GUARDS 
 https://dev.to/niyiojeyinka/learn-to-use-laravel-guard-by-creating-an-ads-network-2ifp
@@ -81,7 +83,9 @@ class Advertiser extends Authenticatable
 ### Creating middleware for guard protect
 to create a middleware for each of our guards to protect each user types resources
 
-```php artisan make:middleware AdvertiserAuth```
+```
+php artisan make:middleware AdvertiserAuth
+```
 
 ```php
 //app/Http/middleware
@@ -100,7 +104,7 @@ class AdminAuth
          return route('advertiser.login');
     }
 }
-```php
+```
 
 ```php
 protected $routeMiddleware = [...
@@ -127,3 +131,24 @@ protected $routeMiddleware = [...
 //protected admin routes here
 });
 ```
+
+### Specifying A Guard in Controller
+```php
+public function __construct()
+{
+    $this->middleware('advertiser.auth');
+}
+```
+
+### Accessing Specific Guard Instances
+```php 
+if (Auth::guard('advertiser')->attempt($credentials)) {
+    //
+}
+```
+
+You may specify the guard instance you would like to use:
+```php
+Auth::guard('advertiser')->login($user);
+```
+
